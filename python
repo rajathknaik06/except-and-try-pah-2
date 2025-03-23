@@ -1,0 +1,26 @@
+""" Write a program to obtain the cost for 'n' days of an item and n as input and calculate the cost per day for the item. In case, zero is given as input for n, an arithmetic exception is thrown, handle the exception and prompt the user accordingly with an error message 'Division by Zero'
+
+
+
+Refer to Sample input and output for better understanding.
+
+Input format :
+The first line of the input consists of a float representing the cost of the item for n days.
+
+The second line of the input consists of an integer representing a number of days.
+
+Output format :
+The output displays the cost of one day if the number of days is not equal to zero.
+
+Otherwise, it prints 'Division by Zero'"""
+
+#cost of n days
+cost = float(input())
+#Number of days
+n = int(input())
+
+try:
+    div = cost / n
+    print(div)
+except ZeroDivisionError as e:
+    print('Division by Zero')
